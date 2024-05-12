@@ -13,7 +13,7 @@ def extrae_comentarios_meneo (meneo, pagina_comentarios):
     try:
         ol_comentarios = meneo.find("ol", class_="comments-list")
         lista_comentarios = ol_comentarios.find_all("li")
-        url  = "https://www.meneame.net" + meneo.find("a", class_="comments")["href"].strip()
+        url  = "https://old.meneame.net" + meneo.find("a", class_="comments")["href"].strip()
         fechas = meneo.find("div", class_="news-submitted").find_all("span", class_="ts")
         fecha_envio = fechas[0]["data-ts"].strip()
         fecha_publicacion = fechas[1]["data-ts"].strip()
