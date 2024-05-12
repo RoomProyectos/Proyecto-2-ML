@@ -4,10 +4,9 @@ import numpy as np
 from bs4 import BeautifulSoup
 from selenium import webdriver
 
-# Función principal de extracción de datos
 def extrae_datos_meneos (lista_meneos):
     ''' 
-        Función para la extración de todos los meneos con clicks
+        Función para la extración de todas las noticias (meneos) de la web meneame.net
     '''
     datos = []
     

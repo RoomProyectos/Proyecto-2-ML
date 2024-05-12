@@ -53,7 +53,7 @@ def extrae_comentarios_meneo (meneo, pagina_comentarios):
             datos_comentario["votos"] = np.nan
 
         try:
-            datos_comentario["karma"] = comentario.find("span", class_="votes-counter").text.strip("K ")
+            datos_comentario["karma"] = comentario.find(title="Karma").text.strip("K ")
         except:
             datos_comentario["karma"] = np.nan
 
