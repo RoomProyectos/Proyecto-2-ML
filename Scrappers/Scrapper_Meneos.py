@@ -133,7 +133,7 @@ print("\n")
 print("-"*34)
 print(f" Total paginas procesadas: {contador_paginas}")
 print(f" Total noticias importadas: {len(lista_aux)}")
-print(f" Total de errores: {contador_errores["Errores"]}")
+print(f" Total de errores: {contador_errores['Errores']}")
 print("-"*34)
 
 browser.close()
